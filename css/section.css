@@ -1,0 +1,100 @@
+/*
+ * Section styles
+ */
+#home {
+    display: flex;
+    height: 95vh;
+    width: 100vw;
+    max-width: 1200px;
+    
+    justify-content: flex-start; 
+    align-items: flex-end; 
+    flex-wrap: wrap; 
+
+    padding: 1rem;
+}
+/* Main title */
+#home h1 {
+    font-kerning: -2;
+    line-height: 4rem;
+}
+/* Main title spans */
+#clarence-text {
+    font-family: "Instrument Serif", serif;
+    font-size: 10rem;
+    font-style: italic;
+    font-weight: lighter;
+
+}
+#lubrin-text {
+    font-family: "Poppins", sans-serif;
+    font-size: 9.5rem;
+    font-style: normal;
+    font-weight: 300;
+}
+
+/* Profile image */
+#home #profile-img {
+    position: absolute;
+    /* position at center right */
+    top: 40%;
+    right: 5%;
+    transform: translateY(-50%);
+    z-index: -1;
+    width: 400px;
+    max-width: 40vw;
+    border-radius: 25%;
+    object-fit: cover;
+    object-position: center;
+    filter: drop-shadow(5px 5px 10px #4d4d4d10);
+}
+/* Featured section */
+#featured {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    max-height: 600px;
+
+    background-color: rgb(245, 245, 244);
+}
+#featured img {
+    width: 100%;
+    height:100%;
+    object-fit: cover; 
+    object-position: center;
+}
+/* Projects section */
+#projects {
+    padding: 1rem;
+    border-bottom: 2px solid rgb(245, 245, 244);
+}
+#project-img-container {
+    display: flex;
+    align-items: end;
+}
+#project-img-container img {
+    width: 600px;
+    filter: drop-shadow(5px 5px 10px #4d4d4d10);
+}
+.project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.project-card p {
+    margin: 1rem 0rem 0rem 0rem;
+}
+.project-card .title {
+    color:rgb(200, 200, 199);
+    text-align: center;
+    font-style: italic;
+}
+.project-card .subtitle {
+    color:rgb(200, 200, 199);
+    max-width: 500px;
+}
+/* Details section */
+#details {
+    padding: 1rem;
+}

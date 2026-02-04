@@ -1,0 +1,39 @@
+/* 
+ * Navigation styles
+ */
+nav {
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    height: 5vh;
+    width: 100%;
+
+    background-color: gray;
+
+    padding-left: 2rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    background: rgba(255, 255, 255, 0.253); 
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(223, 223, 223, 0.336);
+    -webkit-backdrop-filter: blur(10px); 
+}
+/* Navigation links */
+nav a{
+    text-decoration-line: none;
+    color: oklch(14.7% 0.004 49.25);
+    margin: 1rem;
+    padding: 4px 10px 4px 10px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 1rem;
+    transition: border 300ms ;
+}
+/* Navigation links hover */
+nav a:hover{
+    border: 1px solid rgb(12, 10, 9);
+}

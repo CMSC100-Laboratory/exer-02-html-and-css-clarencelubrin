@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clarence Lubrin Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- CSS STYLESHEET IMPORT -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/section.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- GOOGLE FONT IMPORT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -12,40 +17,70 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Navigation -->
     <nav>
-        <!-- Logo -->
         <!-- Navigations Links -->
         <a href="#home">Home</a>
-        <a href="#details">About Me</a>
         <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="#details">About Me</a>
+        <a href="#contacts">Contact</a>
     </nav>
+    <!-- Main content -->
     <main>
+        <!-- Home section -->
         <div id="home">
             <div class="container">
+                <!-- Title -->
                 <h1>
                     <span id="clarence-text">clarence</span><br>
                     <span id="lubrin-text">LUBRIN</span>
                 </h1>
+                <!-- Subtitle -->
                 <p>
                     BS Computer Science Student <br>
                     University of the Philippines <br>
                     Los Baños
                 </p>
             </div>
+            <!-- Profile Image -->
+            <img id="profile-img" src="img/profile.jpg" alt="profile.jpg">
         </div>
+        <!-- Featured section -->
         <div id="featured">
             <h2>Featured</h2>
             <img src="img/mockup.png" alt="mockup.png">
         </div>
+        <!-- Projects section -->
         <div id="projects">
             <h2>Previous Projects</h2>
             <div class="container overflow" id="project-img-container">
-                <img src="img/talahanayan-1.png" alt="talahanayan-1.png">
-                <img src="img/talahanayan-2.png" alt="talahanayan-2.png">
-                <img src="img/baybayin.png" alt="baybayin.png">
-                <img src="img/amis-1.png" alt="amis-1.png">
-                <img src="img/amis-2.png" alt="amis-2.png">
+                <div class="project-card">
+                    <img src="img/talahanayan-1.png" alt="talahanayan-1.png">
+                    <p class="title">Talahanayan Web Application (Main Page)</p>
+                    <p class="subtitle">It is an online bookkeeping application. It features auto-formatting tools such as tabbing, casing, and P/R autofill.</p>
+                    
+                </div>
+                <div class="project-card">
+                    <img src="img/talahanayan-2.png" alt="talahanayan-2.png">
+                    <p class="title">Talahanayan Web Application (Log-in Page)</p>
+                    <p class="subtitle">Users can log-in using their username and password. Users data is stored in a MongoDB database with FastAPI server.</p>
+
+                </div>
+                <div class="project-card">
+                    <img src="img/baybayin.png" alt="baybayin.png">
+                    <p class="title">Baybayin Handwriting Recognition</p>
+                    <p class="subtitle">It is a machine learning project that classify handwritten Baybayin characters using a convolutional neural network. </p>
+                </div>
+                <div class="project-card">
+                    <img src="img/amis-1.png" alt="amis-1.png">
+                    <p class="title">AMIS Redesign (Log-in Page)</p>
+                    <p class="subtitle">This is a personal redesign of AMIS using Figma. It aims to have a more intuitive and streamlined user experience.</p>
+                </div>
+                <div class="project-card">
+                    <img src="img/amis-2.png" alt="amis-2.png">
+                    <p class="title">AMIS Redesign (Main Page)</p>
+                    <p class="subtitle">The main page of the AMIS redesign focuses on providing a clean and user-friendly interface for managing academic information.</p>
+                </div>
             </div>
         </div>
         <div id="details" class="grid">
@@ -69,12 +104,21 @@ Databases: MongoDB, MySQL</li>
             </div>
         </div>
     </main>
+    <!-- Footer -->
     <footer>
-        <div id="contact">
+        <!-- Contact Information -->
+        <div class="contact-container">
             <h2>Contact me:</h2>
             <p>culubrin@up.edu.ph</p>
             <p>+63-916-392-8892</p>
-            <p>clarencelubrin.vercel.app</p>
+            <a href="https://clarencelubrin.vercel.app">clarencelubrin.vercel.app</a>
+            <p>Copyright © 2026 Clarence Lubrin</p>   
+        </div>
+        <!-- Back to top -->
+        <div class="back-to-top-container">
+            <div class="back-to-top-content">
+                <a href="#home">Back to top</a>
+            </div>
         </div>
     </footer>
 </body>

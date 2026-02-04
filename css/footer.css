@@ -1,0 +1,45 @@
+/*
+ * Footer styles
+ */
+footer {
+    width: 100%;
+    background-color: rgb(231, 229, 228);
+    color: rgb(87, 83, 77);
+}
+footer a {
+    text-decoration-line: none;
+    font-style: italic;
+    color: rgb(87, 83, 77);
+}
+/* Contacts container */
+.contact-container {
+    padding: 1rem;
+}
+
+/* Return button container */
+.back-to-top-container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgb(200, 200, 199);
+}
+/* Back to top link container */
+.back-to-top-content {
+    padding: 1rem 0rem 1rem 0rem;
+}
+/* Back to top link */
+.back-to-top-content a {
+    text-decoration-line: none;
+    color: rgb(87, 83, 77);
+    
+    padding: 1rem 2rem 1rem 2rem;
+    border-right: 1px solid rgba(0, 0, 0, 0);
+    background-color: transparent;
+    transition: border-right 300ms ease-in-out, background-color 300ms ease-in-out;
+}
+.back-to-top-content a:hover {
+    border-right: 1px solid rgb(200, 200, 199);
+    background-color: rgb(200, 200, 199);
+
+}

@@ -1,0 +1,64 @@
+/*
+ * Global styles
+ */
+* {
+    margin: none;
+    padding: none;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    
+    margin: 0;
+}
+main {
+    width: 100vw;
+}
+
+/* Typography */
+h1 {
+    font-size: 5rem;
+}
+p {
+    max-width: 600px;
+}
+
+/* Containers */
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+.container.overflow {
+    overflow-y: auto;
+    mask-clip: no-clip;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px; 
+    overflow-y: auto;
+
+    /* Center items */
+    justify-content: center;
+    align-items: start;
+}
+
+.grid > * {
+    padding: 10px;
+    font-size: 30px;
+}
+
+/* List */
+li {
+    max-width: 550px;
+}
+
+
